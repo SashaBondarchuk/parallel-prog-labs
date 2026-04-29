@@ -21,7 +21,7 @@ int maxThreads = Environment.ProcessorCount;
 
 for (int threads = 2; threads <= maxThreads; threads++)
 {
-    Console.WriteLine($"\nПотоки: {threads}");
+    Console.WriteLine($"Потоки: {threads}");
 
     RunAndMeasure(() => TransposeParallel(matrix, threads));
 }

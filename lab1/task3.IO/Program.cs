@@ -23,7 +23,7 @@ Console.WriteLine("Послідновний");
 RunAndMeasure(() =>
 {
     long totalWords = CountWordsSequential(baseDir);
-    Console.WriteLine($"Загальна кількість слів: {totalWords}");
+    // Console.WriteLine($"Загальна кількість слів: {totalWords}");
 });
 
 Console.WriteLine("\nПаралельний");
@@ -32,11 +32,11 @@ int maxThreads = Environment.ProcessorCount;
 
 for (int threads = 2; threads <= maxThreads; threads++)
 {
-    Console.WriteLine($"\nПотоки: {threads}");
+    Console.WriteLine($"Потоки: {threads}");
     RunAndMeasure(() =>
     {
         long totalWords = CountWordsParallel(baseDir, threads);
-        Console.WriteLine($"Загальна кількість слів: {totalWords}");
+        // Console.WriteLine($"Загальна кількість слів: {totalWords}");
     });
 }
 

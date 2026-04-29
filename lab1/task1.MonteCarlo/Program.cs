@@ -1,6 +1,9 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using System.Numerics;
 using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
 
 UTF8Encoding encoding = new UTF8Encoding();
 Console.OutputEncoding = encoding;
@@ -16,7 +19,7 @@ foreach (long n in iterations)
     Console.WriteLine("Elapsed milliseconds: {0}", sw.ElapsedMilliseconds);
 }
 
-// Console.WriteLine("\nПаралельний");
+Console.WriteLine("\nПаралельний");
 int maxThreads = Environment.ProcessorCount;
 for (int threads = 2; threads <= maxThreads; threads++)
 {
