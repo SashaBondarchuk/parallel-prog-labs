@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab3.task2", "lab3.task2\lab3.task2.csproj", "{7C830BB1-9DD5-4E25-A821-F0A823ECB1AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "named-pipes", "named-pipes\named-pipes.csproj", "{08A953DC-BB8F-4961-9F3A-C2C9FC1C0EF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "shared-memory", "shared-memory\shared-memory.csproj", "{62BAFDB6-A03D-4149-96F2-9F4C19984E9E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C830BB1-9DD5-4E25-A821-F0A823ECB1AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C830BB1-9DD5-4E25-A821-F0A823ECB1AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C830BB1-9DD5-4E25-A821-F0A823ECB1AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C830BB1-9DD5-4E25-A821-F0A823ECB1AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08A953DC-BB8F-4961-9F3A-C2C9FC1C0EF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08A953DC-BB8F-4961-9F3A-C2C9FC1C0EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08A953DC-BB8F-4961-9F3A-C2C9FC1C0EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08A953DC-BB8F-4961-9F3A-C2C9FC1C0EF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62BAFDB6-A03D-4149-96F2-9F4C19984E9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62BAFDB6-A03D-4149-96F2-9F4C19984E9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62BAFDB6-A03D-4149-96F2-9F4C19984E9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62BAFDB6-A03D-4149-96F2-9F4C19984E9E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
