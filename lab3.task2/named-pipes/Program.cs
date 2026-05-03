@@ -8,7 +8,7 @@ class Program
     static void Main(string[] args)
     {
         Console.OutputEncoding = System.Text.Encoding.UTF8;
-        const int iterations = 10000;
+        const int iterations = 1000;
         var timings = new List<double>();
         Random rnd = new Random();
 
