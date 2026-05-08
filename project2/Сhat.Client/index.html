@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distributed Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Distributed Chat</h1>
+        </div>
+
+        <div class="connection-section">
+            <div class="connection-form">
+                <input type="text" id="username" placeholder="Ваше ім'я">
+                <button id="connectButton">Підключитись</button>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="sidebar">
+                <div class="users-section">
+                    <div class="section-title">
+                        Користувачі онлайн
+                        <span id="onlineCount" class="online-badge">0</span>
+                    </div>
+                    <ul id="usersList" class="user-list">
+                        <!-- Users will be populated here -->
+                    </ul>
+                </div>
+
+                <div class="groups-section">
+                    <div class="section-title">
+                        Групи
+                        <button id="createGroupBtn">+</button>
+                    </div>
+                    <ul id="groupsList" class="group-list">
+                        <!-- Groups will be populated here -->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="chat-area">
+                <div class="chat-header" id="chatHeader">
+                    <span id="chatTitle">Оберіть користувача або групу для початку спілкування</span>
+                </div>
+                <div class="chat-window">
+                    <ul id="messagesList" class="messages-list">
+                        <!-- Messages will be displayed here -->
+                    </ul>
+                </div>
+
+                <div class="input-area">
+                    <div class="attachment-preview" id="attachmentPreview">
+                        <div id="attachmentList"></div>
+                    </div>
+                    <div class="message-form">
+                        <div class="file-input-wrapper">
+                            <input type="file" id="fileInput" multiple>
+                            <button type="button" class="file-button">📎</button>
+                        </div>
+                        <input type="text" id="messageInput" placeholder="Введіть повідомлення...">
+                        <button id="sendButton">Відправити</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Create Group Modal -->
+    <div id="createGroupModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Створити групу</h2>
+            <div class="group-form">
+                <input type="text" id="groupName" placeholder="Назва групи">
+                <div class="user-checkboxes" id="userCheckboxes">
+                    <!-- User checkboxes will be populated here -->
+                </div>
+                <button id="createGroupButton">Створити</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
