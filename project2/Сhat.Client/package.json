@@ -1,0 +1,16 @@
+{
+  "name": "distributed-chat-client",
+  "version": "1.0.0",
+  "description": "A modern real-time chat client with group messaging and file sharing",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "build": "echo 'No build step required for static files'",
+    "docker:build": "docker build -t chat-client .",
+    "docker:run": "docker run -p 8080:80 chat-client",
+    "compose:up": "docker-compose up --build"
+  },
+  "keywords": ["chat", "websocket", "real-time", "web"],
+  "author": "",
+  "license": "MIT"
+}
